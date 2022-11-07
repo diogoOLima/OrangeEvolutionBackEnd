@@ -21,15 +21,24 @@ class databaseTrilhasAcessadas extends DAO {
     }
 
     static async listarTodasTrilhasAcessadas() {
-        const query = `SELECT * FROM trilhasAcessadas`;
+        const query = `SELECT usuarios.usuario, trilhas.tipo, trilhas.nomeTrilha, usuarios.usuario_id, trilhas.trilha_id
+         FROM usuarios
+         INNER JOIN trilhasAcessadas ON usuarios.usuario_id = trilhasAcessadas.usuario_id
+         INNER JOIN trilhas ON trilhas.trilha_id = trilhasAcessadas.trilha_id`;
         const resposta = await this.listarTodos(query);
         return resposta;
       }
       static async listarTrilhasAcessadasPorId(id) {
-        const query = `SELECT * FROM trilhas WHERE trilhasAcessadas_Id = ?`;
+        const query = `SELECT usuarios.usuario, trilhas.tipo, trilhas.nomeTrilha, usuarios.usuario_id, trilhas.trilha_id
+        FROM usuarios
+        INNER JOIN trilhasAcessadas ON usuarios.usuario_id = trilhasAcessadas.usuario_id
+        INNER JOIN trilhas ON trilhas.trilha_id = trilhasAcessadas.trilha_id
+        WHERE trilhasAcessadas_Id = ?`;
         const resposta = await this.listarPorId(id, query);
         return resposta;
       }
+
+
       static async deletarTrilhaAcessadaPorId(id) {
         const query = `DELETE FROM trilhas WHERE trilhasAcessadas_Id = ?`;
         const resposta = await this.deletarPorId(id, query);
