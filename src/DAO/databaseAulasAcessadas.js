@@ -15,7 +15,7 @@ class databaseAulasAcessadas extends DAO {
     }
 
     static async inserirAulaAcessada(trilha) {
-        const query = `INSERT INTO trilhasAcessadas (usuario_id, aula_id) VALUES (?, ?)`;
+        const query = `INSERT INTO aulasAcessadas (usuario_id, aula_id) VALUES (?, ?)`;
         const resposta = await this.inserir(trilha, query);
         return resposta
     }
