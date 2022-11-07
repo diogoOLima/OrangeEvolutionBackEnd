@@ -5,8 +5,8 @@ class databaseTrilhas extends DAO {
     static async criarTabelaTrilhas() {
         const query = `CREATE TABLE IF NOT EXISTS trilhas(
                         trilha_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        nomeTrilha VARCHAR UNIQUE NOT NULL,
-                        tipo VARCHAR
+                        nomeTrilha VARCHAR  NOT NULL,
+                        tipo VARCHAR UNIQUE NOT NULL,
                         )`;
         const resposta = await this.criarTabela(query);
         return resposta;
