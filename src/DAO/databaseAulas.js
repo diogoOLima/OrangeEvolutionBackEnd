@@ -31,6 +31,12 @@ class databaseAulas extends DAO {
         return resposta;
       }
 
+      static async deletarAulas() {
+        const query = `DROP TABLE aulas`;
+        const resposta = await this.deletarTabela(query);
+        return resposta;
+      }
+
       static async deletarAulaPorId(id) {
         const query = `DELETE FROM aulas WHERE aula_id = ?`;
         const resposta = await this.deletarPorId(id, query);

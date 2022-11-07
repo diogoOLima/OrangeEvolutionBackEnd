@@ -36,6 +36,8 @@ class Trilhas {
             }
         });
 
+      
+
         //atualizar por id
         app.put("/trilhas/:id", async(req,res)=> {
             try {
@@ -49,6 +51,17 @@ class Trilhas {
             } catch (error) {
                 res.status(400).json(error.message);
               }
+        });
+
+          //deletar trilha
+          app.delete("/trilhas", async(req, res)=> {
+            try {
+                const trilha = new trilhasModel(...Object.values(req.body));
+                const resposta = await databaseTrilhas.deletarTrilhas(trilha);
+                res.status(201).json(resposta);
+            } catch(error) {
+                res.status(400).json(error.message)
+            }
         });
 
         //deletar por id

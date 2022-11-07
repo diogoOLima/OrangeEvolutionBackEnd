@@ -5,8 +5,8 @@ class databaseTrilhasAcessadas extends DAO {
     static async criarTabelaTrilhasAcessadas() {
         const query = `CREATE TABLE IF NOT EXISTS trilhasAcessadas(
                         trilhasAcessadas_Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        trilhas_id INTEGER NOT NULL,
-                        usuarios_id INTEGER NOT NULL
+                        trilha_id INTEGER NOT NULL,
+                        usuario_id INTEGER NOT NULL,
                         FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id),
                         FOREIGN KEY (trilha_id) REFERENCES trilhas(trilha_id)
                         )`;
@@ -35,6 +35,12 @@ class databaseTrilhasAcessadas extends DAO {
         INNER JOIN trilhas ON trilhas.trilha_id = trilhasAcessadas.trilha_id
         WHERE trilhasAcessadas_Id = ?`;
         const resposta = await this.listarPorId(id, query);
+        return resposta;
+      }
+
+      static async deletarTrilhasAcessadas() {
+        const query = `DROP TABLE trilhasAcessadas`;
+        const resposta = await this.deletarTabela( query);
         return resposta;
       }
 

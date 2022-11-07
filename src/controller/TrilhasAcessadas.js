@@ -1,7 +1,7 @@
 import trilhasAcessadasModel from "../models/trilhasAcessadasModel.js";
 import databaseTrilhasAcessadas from '../DAO/databaseTrilhasAcessadas.js'
 
-databaseTrilhas.criarTabelaTrilhasAcessadas();
+databaseTrilhasAcessadas.criarTabelaTrilhasAcessadas();
 
 class TrilhasAcessadas {
     
@@ -49,6 +49,17 @@ class TrilhasAcessadas {
             } catch (error) {
                 res.status(400).json(error.message);
               }
+        });
+
+           //deletar trilhasAcessadas
+           app.delete("/trilhasAcessadas", async(req, res)=> {
+            try {
+                const trilha = new trilhasAcessadasModel(...Object.values(req.body));
+                const resposta = await databaseTrilhasAcessadas.deletarTrilhasAcessadas(trilha);
+                res.status(201).json(resposta);
+            } catch(error) {
+                res.status(400).json(error.message)
+            }
         });
 
         //deletar por id

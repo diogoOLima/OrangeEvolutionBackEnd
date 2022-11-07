@@ -12,6 +12,8 @@ class databaseTrilhas extends DAO {
         return resposta;
     }
 
+
+
     static async inserirTrilha(trilha) {
         const query = `INSERT INTO trilhas (nomeTrilha, tipo) VALUES (?, ?)`;
         const resposta = await this.inserir(trilha, query);
@@ -28,11 +30,19 @@ class databaseTrilhas extends DAO {
         const resposta = await this.listarPorId(id, query);
         return resposta;
       }
+
+      static async deletarTrilhas() {
+        const query = `DROP TABLE trilhas`;
+        const resposta = await this.deletarTabela( query);
+        return resposta;
+      }
+
       static async deletarTrilhaPorId(id) {
         const query = `DELETE FROM trilhas WHERE trilha_id = ?`;
         const resposta = await this.deletarPorId(id, query);
         return resposta;
       }
+
       static async atualizarTrilhaPorId(id, trilha) {
         const query = `UPDATE trilhas
         SET nomeTrilha = ?,

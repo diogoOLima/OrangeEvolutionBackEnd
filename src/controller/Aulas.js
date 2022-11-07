@@ -51,6 +51,17 @@ class Aulas {
               }
         });
 
+        //deletar trilha
+        app.delete("/aulas", async(req, res)=> {
+            try {
+                    const trilha = new aulasModel(...Object.values(req.body));
+                    const resposta = await databaseAulas.deletarAulas(trilha);
+                    res.status(201).json(resposta);
+                } catch(error) {
+                    res.status(400).json(error.message)
+                }
+        });
+
         //deletar por id
         app.delete("/aulas/:id", async(req,res)=> {
             try {

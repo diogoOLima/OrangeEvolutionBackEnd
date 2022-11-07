@@ -78,6 +78,21 @@ class DAO {
         });
       }
 
+      static deletarTabela(query) {
+        return new Promise((resolve, reject)=> {
+          Database.run(query, (err)=> {
+            if(err) {
+              reject.apply(err.message)
+            } else {
+              resolve({
+                erro: false,
+                message: "Tabela deletada com sucesso",
+              });
+            }
+          })
+        })
+      }
+
       static atualizarPorId(entidade, id, query) {
         const body = Object.values(entidade);
         return new Promise((resolve, reject) => {
