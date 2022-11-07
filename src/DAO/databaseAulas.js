@@ -7,15 +7,19 @@ class databaseAulas extends DAO {
                         aula_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         nomeAula VARCHAR UNIQUE NOT NULL,
                         link VARCHAR NOT NULL,
+                        tempo VARCHAR NOT NULL,
+                        origem VARCHAR NOT NULL,
                         nomeTrilha VARCHAR NOT NULL,
-                        FOREIGN KEY (nomeTrilha) REFERENCES trilhas (nomeTrilha)
+                        tipo VARCHAR NOT NULL,
+                        FOREIGN KEY (nomeTrilha) REFERENCES trilhas (nomeTrilha),
+                        FOREIGN KEY (tipo) REFERENCES trilhas (tipo)
                         )`;
         const resposta = await this.criarTabela(query);
         return resposta;
     }
 
     static async inserirAula(aula) {
-        const query = `INSERT INTO aulas (nomeAula, link, nomeTrilha) VALUES (?, ?, ?)`;
+        const query = `INSERT INTO aulas (nomeAula, link, tempo, origem, nomeTrilha, tipo) VALUES (?, ?, ?, ?, ?, ?)`;
         const resposta = await this.inserir(aula, query);
         return resposta
     }
@@ -46,7 +50,10 @@ class databaseAulas extends DAO {
         const query = `UPDATE aulas
         SET nomeAula = ?,
             link = ?,
+            tempo = ?,
+            origem = ?,
             nomeTrilha = ?,
+            tipo = ?,
             WHERE aula_id = ?`;
         const resposta = await this.atualizarPorId(aula, id, query);
         return resposta;
