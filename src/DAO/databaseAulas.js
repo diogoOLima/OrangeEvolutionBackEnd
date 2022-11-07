@@ -10,7 +10,7 @@ class databaseAulas extends DAO {
                         tempo VARCHAR NOT NULL,
                         origem VARCHAR NOT NULL,
                         tipo VARCHAR NOT NULL,
-                        FOREIGN KEY (tipo) REFERENCES trilhas (tipo)
+                        FOREIGN KEY (tipo) REFERENCES trilhas(tipo)
                         )`;
         const resposta = await this.criarTabela(query);
         return resposta;

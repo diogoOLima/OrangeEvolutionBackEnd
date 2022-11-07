@@ -6,7 +6,7 @@ class databaseTrilhas extends DAO {
         const query = `CREATE TABLE IF NOT EXISTS trilhas(
                         trilha_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         nomeTrilha VARCHAR  NOT NULL,
-                        tipo VARCHAR UNIQUE NOT NULL,
+                        tipo VARCHAR UNIQUE NOT NULL
                         )`;
         const resposta = await this.criarTabela(query);
         return resposta;
