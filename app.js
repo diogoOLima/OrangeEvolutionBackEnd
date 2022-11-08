@@ -17,6 +17,8 @@ app.listen(port, ()=> {
     console.log(`Servidor rodando em http://localhost:${port}`)
 });
 
+const distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 app.use(favicon(__dirname + 'public/favicon.ico'));
 app.use(express.json());
 
