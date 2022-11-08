@@ -7,11 +7,11 @@ import AulasAcessadas from './src/controller/AulasAcessadas.js'
 
 dotenv.config();
 
-const porta = process.env.PORT || 3001
+const port = process.env.PORT || 3001
 const app = express()
 
-app.listen(porta, ()=> {
-    console.log(`Servidor rodando em http://localhost:${porta}`)
+app.listen(port, ()=> {
+    console.log(`Servidor rodando em http://localhost:${port}`)
 });
 
 app.use(express.json());
