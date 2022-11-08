@@ -27,6 +27,7 @@ class DAO {
         })
     }
 
+    
     static inserir(entidade, query) {
         const body = Object.values(entidade);
     
