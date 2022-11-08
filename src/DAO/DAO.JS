@@ -12,6 +12,7 @@ class DAO {
             }
         })
     }
+    
 
     static criarTabela(query) {
         this.activePragma();
@@ -27,7 +28,7 @@ class DAO {
         })
     }
 
-    
+
     static inserir(entidade, query) {
         const body = Object.values(entidade);
     
