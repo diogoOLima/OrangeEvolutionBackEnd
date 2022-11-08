@@ -17,7 +17,7 @@ app.listen(port, ()=> {
     console.log(`Servidor rodando em http://localhost:${port}`)
 });
 
-app.use(favicon(__dirname + 'public/favicon.png'));
+app.use(favicon(__dirname + 'public/favicon.ico'));
 app.use(express.json());
 
 Usuarios.rotas(app);
