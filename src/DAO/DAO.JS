@@ -35,7 +35,7 @@ class DAO {
             if (err) {
               reject(err.message);
             } else {
-              resolve({ error: false, message: "Cadastrado com sucesso!" });
+              resolve({ error: false, message: "Cadastrado com sucesso." });
             }
           });
         });
@@ -71,7 +71,7 @@ class DAO {
             } else {
               resolve({
                 erro: false,
-                message: `Registro com Id ${id} deletado com sucesso`,
+                message: `Registro com Id ${id} deletado com sucesso.`,
               });
             }
           });
@@ -86,7 +86,7 @@ class DAO {
             } else {
               resolve({
                 erro: false,
-                message: "Tabela deletada com sucesso",
+                message: "Tabela deletada com sucesso.",
               });
             }
           })
