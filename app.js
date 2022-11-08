@@ -1,5 +1,6 @@
 import express  from "express";
 import expressFavicon from "express-favicon";
+import  __dirname  from "path";
 import * as dotenv from "dotenv";
 import Usuarios from "./src/controller/Usuarios.js";
 import Trilhas from "./src/controller/Trilhas.js";
@@ -8,7 +9,7 @@ import AulasAcessadas from './src/controller/AulasAcessadas.js'
 
 dotenv.config();
 
-const favicon = require(expressFavicon);
+const favicon = expressFavicon;
 const port = process.env.PORT || 3001
 const app = express();
 
