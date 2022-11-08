@@ -1,4 +1,5 @@
 import express  from "express";
+import  __dirname  from "path";
 import * as dotenv from "dotenv";
 import Usuarios from "./src/controller/Usuarios.js";
 import Trilhas from "./src/controller/Trilhas.js";
@@ -7,11 +8,11 @@ import AulasAcessadas from './src/controller/AulasAcessadas.js'
 
 dotenv.config();
 
-const porta = process.env.PORT || 3001
-const app = express()
+const port = process.env.PORT || 3001
+const app = express();
 
-app.listen(porta, ()=> {
-    console.log(`Servidor rodando em http://localhost:${porta}`)
+app.listen(port, ()=> {
+    console.log(`Servidor rodando em http://localhost:${port}`)
 });
 
 app.use(express.json());
