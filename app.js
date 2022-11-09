@@ -1,10 +1,12 @@
 import express  from "express";
 import  __dirname  from "path";
 import * as dotenv from "dotenv";
+import cors from "cors";
 import Usuarios from "./src/controller/Usuarios.js";
 import Trilhas from "./src/controller/Trilhas.js";
 import Aulas from "./src/controller/Aulas.js";
 import AulasAcessadas from './src/controller/AulasAcessadas.js'
+
 
 dotenv.config();
 
@@ -15,6 +17,7 @@ app.listen(port, ()=> {
     console.log(`Servidor rodando em http://localhost:${port}`)
 });
 
+app.use(cors());
 app.use(express.json());
 
 Usuarios.rotas(app);
