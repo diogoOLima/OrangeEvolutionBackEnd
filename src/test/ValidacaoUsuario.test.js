@@ -1,4 +1,4 @@
-import ValicadaoUsuarios from "../services/ValidacaoUsuarios";
+import ValicadaoUsuarios from "../services/ValidacaoUsuarios.js";
 
 /* Validação Usuário */
 test("Validade se o nome de usuário tem 3 caracteres ou mais.", ()=> {

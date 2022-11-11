@@ -1,4 +1,4 @@
-import ValidacaoTrilhas from '../services/ValidacaoTrilhas'
+import ValidacaoTrilhas from '../services/ValidacaoTrilhas.js'
 
 /* Validação nomeTrilha */
 test("Valida se o nome da trilha começa com Trilha.", ()=> {

@@ -1,4 +1,4 @@
-import ValidacaoAulasAcessadas from '../services/ValidacaoAulasAcessadas'
+import ValidacaoAulasAcessadas from '../services/ValidacaoAulasAcessadas.js';
 
 /* Validação aula_id */
 test("Valida se a aula_id é um número.", ()=> {

@@ -15,4 +15,11 @@ export default class ValidacaoAulasAcessadas {
             return false;
         }
     }
+
+    static isValid(aulaid, usuarioid, tempo, origem, tipo) {
+        return (
+          this.validaAulaId(aulaid) &&
+          this.validaUsuarioId(usuarioid) 
+        );
+      }
 }

@@ -1,4 +1,4 @@
-import ValidacaoAulas from '../services/ValidacaoAulas'
+import ValidacaoAulas from '../services/ValidacaoAulas.js';
 
 /* Validação nomeAula */
 test("Valida se o nome da aula possui 4 ou mais letras.", ()=> {

@@ -20,4 +20,14 @@ export default class ValidacaoAulas {
     static validaTipo(tipo) {
         return tipo.length > 5;
     }
+
+    static isValid(aula, link, tempo, origem, tipo) {
+        return (
+          this.validanomeAula(aula) &&
+          this.validaLink(link) &&
+          this.validaTempo(tempo) &&
+          this.validaOrigem(origem) && 
+          this.validaTipo(tipo)
+        );
+      }
 }
