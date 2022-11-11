@@ -5,11 +5,8 @@ export default class ValidacaoAulas {
     }
 
     static validaLink(link) {
-        if(typeof link === "string") {
-            return link > 0
-        } else {
-            return false;
-        }
+        const regex = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/ig;
+        return regex.test(link)
     }
 
     static validaTempo(tempo) {
@@ -17,7 +14,7 @@ export default class ValidacaoAulas {
     }
 
     static validaOrigem(origem) {
-        return origem.length >= 2;
+        return origem.length > 2;
     }
 
     static validaTipo(tipo) {

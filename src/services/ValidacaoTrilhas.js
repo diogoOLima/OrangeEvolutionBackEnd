@@ -1,7 +1,7 @@
 export default class ValidacaoTrilhas {
 
     static validanomeTrilha(trilha) {
-        return trilha == "Trilha" + "";
+        return trilha.startsWith("Trilha");
     }
 
     static validaTipo(tipo) {
