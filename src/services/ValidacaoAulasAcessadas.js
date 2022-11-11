@@ -16,7 +16,7 @@ export default class ValidacaoAulasAcessadas {
         }
     }
 
-    static isValid(aulaid, usuarioid, tempo, origem, tipo) {
+    static isValid(aulaid, usuarioid) {
         return (
           this.validaAulaId(aulaid) &&
           this.validaUsuarioId(usuarioid) 
