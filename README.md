@@ -17,9 +17,9 @@
  * [Entidade Aulas](#Entidade-Aulas)
  * [Entidade AulasAcessadas e métodos](#Entidade-AulasAcessadas)
  * [Testes unitários](#Testes-unitários)
- * [Construído com as seguintes ferramentas](#🛠️-Construído-com-as-seguintes-ferramentas:)
+ * [Construído com as seguintes ferramentas](#🛠️Construído-com-as-seguintes-ferramentas:)
  * [Autores](#Autores)
- * [Licença](#📄-Licença)
+ * [Licença](#📄Licença)
  
 
 ## API REST
