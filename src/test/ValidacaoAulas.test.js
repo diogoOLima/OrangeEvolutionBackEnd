@@ -2,7 +2,7 @@ import ValidacaoAulas from '../services/ValidacaoAulas.js';
 
 /* Validação nomeAula */
 test("Valida se o nome da aula possui 4 ou mais letras.", ()=> {
-    expect(ValidacaoAulas.validanomeAula("Desenvolvimento de Sistemas")).toBe(true);
+    expect(ValidacaoAulas.validanomeAula("Diogo")).toBe(true);
 });
 
 test("Valida se o nome da aula possui 4 ou mais letras.", ()=> {
@@ -11,7 +11,7 @@ test("Valida se o nome da aula possui 4 ou mais letras.", ()=> {
 
 /* Validação link */
 test("Valida se o link é url.", ()=> {
-    expect(ValidacaoAulas.validaLink("www.teste.com")).toBe(true);
+    expect(ValidacaoAulas.validaLink("https://www.youtube.com")).toBe(true);
 });
 
 test("Valida se o link é url.", ()=> {
@@ -20,7 +20,7 @@ test("Valida se o link é url.", ()=> {
 
 /* Validação tempo */
 test("Valida se a string de tempo é maior ou igual a 3.", ()=> {
-    expect(ValidacaoAulas.validaTempo("5 minutos")).toBe(true);
+    expect(ValidacaoAulas.validaTempo("11 minutos")).toBe(true);
 });
 
 test("Valida se a string de tempo é maior ou igual a 3.", ()=> {
@@ -29,7 +29,7 @@ test("Valida se a string de tempo é maior ou igual a 3.", ()=> {
 
 /* Validação origem */
 test("Valida se a string de origem é maior que 2.", ()=> {
-    expect(ValidacaoAulas.validaOrigem("Orange")).toBe(true);
+    expect(ValidacaoAulas.validaOrigem("Youtube")).toBe(true);
 });
 
 test("Valida se a string de origem é maior que 2.", ()=> {
@@ -38,7 +38,7 @@ test("Valida se a string de origem é maior que 2.", ()=> {
 
 /* Validação tipo */
 test("Valida se o tamanho da string tipo é maior que 5 letras", ()=> {
-    expect(ValidacaoAulas.validaTipo("Artigo Novo")).toBe(true);
+    expect(ValidacaoAulas.validaTipo("Video FullStack")).toBe(true);
 });
 
 test("Valida se o tamanho da string tipo é maior que 5 letras", ()=> {
