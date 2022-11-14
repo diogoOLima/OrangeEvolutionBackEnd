@@ -9,7 +9,7 @@
  * [API Rest](#API-REST)
  * [Começando](#Começando)
  * [Pré-requisitos](#Pré-requisitos)
- * [Instalação](#Instalação)
+ * [Instalação](##Instalação)
  * [Instalação da ferramenta Insomnia (utilizada para testar as rotas da API)](#Instalação-da-ferramenta-Insomnia-(utilizada-para-testar-as-rotas-da-API))
  * [Executando a aplicação](#Executando-a-aplicação)
  * [Entidade Usuários](#Entidade-Usuários)
