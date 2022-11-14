@@ -10,13 +10,16 @@
  * [Começando](#Começando)
  * [Pré-requisitos](#Pré-requisitos)
  * [Instalação](Instalação)
- * [Instalação da ferramenta Insomnia (utilizada para testar as rotas da API)](#Instalação-da-ferramenta-Insomnia-(utilizada-para-testar-as-rotas-da-API):)
+ * [Instalação da ferramenta Insomnia (utilizada para testar as rotas da API)](#Instalação-da-ferramenta-Insomnia:)
  * [Executando a aplicação](#Executando-a-aplicação)
  * [Entidade Usuários](#Entidade-Usuários)
  * [Entidade Trilhas](#Entidade-Trilhas)
  * [Entidade Aulas](#Entidade-Aulas)
- * [Entidade AulasAcessadas](#Entidade-AulasAcessadas)
- * [Método GET](#Método-GET)
+ * [Entidade AulasAcessadas e métodos](#Entidade-AulasAcessadas)
+ * [Testes unitários](#Testes-unitários)
+ * [Construído com as seguintes ferramentas](#Construído-com-as-seguintes-ferramentas)
+ * [Autores](#Autores)
+ * [Licença](#Licença)
  
 
 ## API REST
@@ -273,11 +276,12 @@ ctrl + c
 
 ## Autores :man_technologist: :woman_technologist:
 
-Projeto desenvolvido em conjunto pelo Squad 1:
+Projeto desenvolvido em conjunto pelo Squad 16:
 
-* **Diogo Lima** - [diogoOLima](https://github.com/diogoOLima)
-* **Luan Moreira** - [luanmoreira59](https://github.com/luanmoreira59)
-* **Lucas Passos** - [LucasBinho](https://github.com/LucasBinho)
+![thumb_raquel (1)](https://user-images.githubusercontent.com/96957356/201738714-e3422ab0-8d9e-40ed-a04b-e5b9f73752c8.jpg) [Raquel Ribeiro](https://www.behance.net/raquelalribeiro)
+![thumb_lucas (1)](https://user-images.githubusercontent.com/96957356/201738718-bf32611f-9f5e-40c9-ba99-ebb7ce0f3bcb.jpg) [Lucas Passos](https://github.com/LucasBinho) 
+![thumb_diogo (1)](https://user-images.githubusercontent.com/96957356/201738720-d6fd1d24-8e83-459b-ba66-1ba2d9c37046.jpg) [Diogo Lima](https://github.com/diogoOLima) 
+![thum_Luan (1)](https://user-images.githubusercontent.com/96957356/201738253-8171cc67-d791-4f74-a43a-a1c814732c43.jpg) [Luan Moreira](https://github.com/luanmoreira59)
 
 
 ---
