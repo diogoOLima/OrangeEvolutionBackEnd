@@ -7,19 +7,19 @@
  # Índice
  * [Logo do projeto](#Logo-Evolution)
  * [API Rest](#API-REST)
- * [Começando](#Começando)
- * [Pré-requisitos](#Pré-requisitos)
- * [Instalação](##Instalação)
+ * [Começando](#🚀-Começando)
+ * [Pré-requisitos](#📋-Pré-requisitos)
+ * [Instalação](#🔧 Instalação)
  * [Instalação da ferramenta Insomnia (utilizada para testar as rotas da API)](#Instalação-da-ferramenta-Insomnia-(utilizada-para-testar-as-rotas-da-API))
- * [Executando a aplicação](#Executando-a-aplicação)
+ * [Executando a aplicação](#⚙️-Executando-a-aplicação)
  * [Entidade Usuários](#Entidade-Usuários)
  * [Entidade Trilhas](#Entidade-Trilhas)
  * [Entidade Aulas](#Entidade-Aulas)
  * [Entidade AulasAcessadas e métodos](#Entidade-AulasAcessadas)
  * [Testes unitários](#Testes-unitários)
- * [Construído com as seguintes ferramentas](#Construído-com-as-seguintes-ferramentas)
+ * [Construído com as seguintes ferramentas](#🛠️-Construído-com-as-seguintes-ferramentas:)
  * [Autores](#Autores)
- * [Licença](#Licença)
+ * [Licença](#📄-Licença)
  
 
 ## API REST
