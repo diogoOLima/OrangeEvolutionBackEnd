@@ -1,8 +1,23 @@
 # ![Logo Evolution](https://user-images.githubusercontent.com/96957356/201692914-855be391-a4b8-48d0-8c01-67eefd8f4633.png)
 
-![image](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![image](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)  ![image](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  ![image](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![image](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![image](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)  ![image](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
  # Orange Evolution
+ 
+ # Índice
+ * [Logo do projeto](#Logo-Evolution)
+ * [API Rest](#API-REST)
+ * [Começando](#Começando)
+ * [Pré-requisitos](#Pré-requisitos)
+ * [Instalação](Instalação)
+ * [Instalação da ferramenta Insomnia (utilizada para testar as rotas da API)](#Instalação-da-ferramenta-Insomnia-(utilizada-para-testar-as-rotas-da-API):)
+ * [Executando a aplicação](#Executando-a-aplicação)
+ * [Entidade Usuários](#Entidade-Usuários)
+ * [Entidade Trilhas](#Entidade-Trilhas)
+ * [Entidade Aulas](#Entidade-Aulas)
+ * [Entidade AulasAcessadas](#Entidade-AulasAcessadas)
+ * [Método GET](#Método-GET)
+ 
 
 ## API REST
 
@@ -67,7 +82,7 @@ Após a instalação você ele deve ter baixado uma pasta chamada node_modules c
 ![pastas](./assets/images/node-modules.PNG)
 
 
-#### Instralação da ferramenta Insomnia (utilizada para testar as rotas da API):
+#### Instalação da ferramenta Insomnia (utilizada para testar as rotas da API):
 
 ***Windows:***
 
