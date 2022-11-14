@@ -1,4 +1,4 @@
-# OrangeEvolutionBackEnd
+# OrangeEvolutionBackEnd :orange:
 ## API REST
 
 Projeto do Programa de Formação do Grupo FCâmara Season 4. 
@@ -211,6 +211,29 @@ Ex.: http://localhost:3001/trilhas/1
 Ele irá deletar o item dentro da entidade escolhida com o id único passado na rota.
 
 
+## Testes Unitários :test_tube:
+
+O programa também possui uma pasta de arquivos de validação, onde existem termos específicos para cada atributo das entidades que para adicionar um novo ou alterar um existente, precisam passar por essa validação:
+```
+Exemplo:
+test("Valida se o link é url.", ()=> {
+    expect(ValidacaoAulas.validaLink("https://www.youtube.com")).toBe(true);    --- Espera-se que o resultado seja true;
+});
+
+test("Valida se o link é url.", ()=> {
+    expect(ValidacaoAulas.validaLink("linkQueNaoPareceURL")).toBe(false);	--- Espera-se que o resultado seja false;
+});
+```
+
+Para rodar os testes unitários, é necessário usar o seguinte comando no terminal:
+```
+npm run test
+```
+
+E esperar resultados no terminal como esse:
+
+![TEST](./assets/images/testes.PNG)
+
 **Finalizando**
 
 Quando terminar de utilizar a aplicação você irá precisar derrubar o servidor e liberar o terminal. Para isso é só utilizar o comando:
@@ -228,7 +251,7 @@ ctrl + c
 * [Jest](https://jestjs.io/pt-BR/)
 ---
 
-## ✒️ Autores
+## Autores :man_technologist: :woman_technologist:
 
 Projeto desenvolvido em conjunto pelo Squad 1:
 
