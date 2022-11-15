@@ -28,6 +28,16 @@ Projeto do Programa de Formação do Grupo FCâmara Season 4.
 A proposta do projeto é a criação de um MVP dado a problemática enviada em processo de hackaton. O seguinte repositório apresenta a construção do banco de dados
 para a construção da página Orange Evolution. A aplicação (API) executa todas as ações do CRUD (Create, Read, Update, Delete) utilizando o padrão REST dos verbos HTTP. A aplicação foi desenvolvida em Node.js juntamente com Express e jest.
 
+## Links do Projeto:
+https://orangevolution.herokuapp.com/aulas
+
+https://orangevolution.herokuapp.com/aulasAcessadas
+
+https://orangevolution.herokuapp.com/usuarios
+
+https://orangevolution.herokuapp.com/trilhas
+
+
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para consumir a API.
