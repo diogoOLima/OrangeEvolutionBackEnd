@@ -7,7 +7,7 @@
  # Índice
  * [Logo do projeto](#Logo-Evolution)
  * [API Rest](#API-REST)
- * [Começando](#-🚀Começando)
+ * [Começando](#🚀-Começando)
  * [Pré-requisitos](#📋-Pré-requisitos)
  * [Instalação](#🔧-Instalação)
  * [Instalação da ferramenta Insomnia (utilizada para testar as rotas da API)](#Instalação-da-ferramenta-Insomnia-(utilizada-para-testar-as-rotas-da-API))
